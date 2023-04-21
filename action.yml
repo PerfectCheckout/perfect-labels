@@ -1,0 +1,12 @@
+name: repo-labels
+description: Sync a repo's issue labels with the standard Perfect set
+inputs:
+  github-token:
+    description: The GitHub token used to sync labels
+    required: true
+  labels-path:
+    description: The file containing a standard set of labels
+    required: true
+runs:
+  using: node12
+  main: index.js
